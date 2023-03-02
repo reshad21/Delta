@@ -37,7 +37,10 @@ body {
 
 
 /* ========== create default class ========== */
-
+.logo_customize {
+    width: 200px;
+    height: 52px;
+}
 
 
 
@@ -79,7 +82,7 @@ ul.navbar-nav {}
     padding: 20px 10px;
     display: none;
     padding-right: 0;
-    width: 245px;
+    width: 250px;
 }
 
 .navbar-nav li:nth-child(1):hover>ul,
@@ -154,6 +157,79 @@ ul.navbar-nav {}
     font-size: 15px;
 }
 
+
+.navber__contact__section {
+    text-align: right;
+}
+
+.navber__contact__section ul {
+    display: flex;
+    justify-content: end;
+    gap: 32px;
+    margin-bottom: 0;
+}
+
+.navber__contact__section ul li {}
+
+.navber__contact__section ul li a {
+    color: #6e6e6e;
+    font-size: 17px;
+    font-weight: lighter;
+    display: inline-block;
+}
+
+.navber__contact__section ul li a:hover {
+    color: #38b549;
+    font-size: 17px;
+    font-weight: lighter;
+    display: inline-block;
+}
+
+
+.navber__contact__section ul li:nth-child(3) {
+    position: relative;
+}
+
+.navber__country__section {
+    background-color: #ebeaea;
+    position: absolute;
+    top: 22px;
+    left: 0;
+    width: 217px;
+    height: fit-content;
+    z-index: 9999999;
+    display: none;
+}
+
+.navber__country__section ul {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 5px;
+}
+
+.navber__country__section ul li {
+    width: 100%;
+    display: block;
+}
+
+.navber__country__section ul li a {
+    display: block;
+    width: 100%;
+    font-size: 14px;
+
+}
+
+.navber__country__section ul li a:hover {
+    display: block;
+    width: 100%;
+    font-size: 14px;
+    background-color: white;
+}
+
+.navber__contact__section ul li:nth-child(3):hover>.navber__country__section {
+    display: block;
+}
 
 
 /* =========== Responsive media query css ============== */
