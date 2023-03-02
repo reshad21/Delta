@@ -149,6 +149,9 @@ ul.navbar-nav {}
 
 .dropdown-item {
     white-space: inherit !important;
+    font-weight: lighter;
+    color: #7e7d7d;
+    font-size: 15px;
 }
 
 
