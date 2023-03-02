@@ -318,6 +318,12 @@ ul.navbar-nav {}
     gap: 3px;
 }
 
+.delta__solution_bottom {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3px;
+}
+
 
 
 
@@ -407,6 +413,12 @@ a.child__more__btn {
     }
 
     .delta__solution_top {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 3px;
+    }
+
+    .delta__solution_bottom {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         gap: 3px;
