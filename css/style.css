@@ -33,6 +33,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     /* background-color: var(--black);
     color: var(--white); */
+    position: relative;
 }
 
 
@@ -45,6 +46,15 @@ body {
 
 
 /* ============== header section start ============= */
+#headerSection {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10000000000;
+    background-color: #fff;
+}
+
 ul.navbar-nav {}
 
 .navbar-nav .nav-link {
@@ -206,6 +216,8 @@ ul.navbar-nav {}
     flex-direction: column;
     padding: 10px;
     gap: 5px;
+    /* justify-content: start; */
+    text-align: left;
 }
 
 .navber__country__section ul li {
@@ -231,6 +243,15 @@ ul.navbar-nav {}
     display: block;
 }
 
+
+/* ============ slider__section =========== */
+.slider__section {
+    margin-top: 80px;
+}
+
+.swiper {
+    height: 100vh
+}
 
 /* =========== Responsive media query css ============== */
 
