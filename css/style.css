@@ -52,6 +52,14 @@ body {
     padding: 100px 0;
 }
 
+.custom__h3 {
+    font-family: 'deltasanslight';
+    font-size: 20px;
+    line-height: 37px;
+    font-weight: 400;
+    color: #00afef;
+}
+
 /* ============== header section start ============= */
 #headerSection {
     position: fixed;
@@ -547,11 +555,19 @@ a.child__more__btn {
 .investor__relation {
     display: flex;
     padding: 100px 0;
+    background-image: url(../images/bg-ir-contact.jpg);
+    background-color: #f7f7f7;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 
 }
 
 .investor__relation__lft {
     width: 50%;
+    padding-right: 30px;
+    border-right: 1px solid #d0d0d0;
 }
 
 .investor__relations__lft__top {
@@ -559,7 +575,7 @@ a.child__more__btn {
 }
 
 .investor__relations__lft__top h3 {
-    position: absolute;
+    /* position: absolute; */
     font-family: 'deltasanslight';
     font-size: 20px;
     line-height: 37px;
@@ -610,6 +626,128 @@ a.child__more__btn {
 }
 
 
+/* -------------- investor__relation__rght -------------- */
+.investor__relation__rght {
+    padding-left: 15px;
+}
+
+.investor__relation__rght__top {
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr;
+    gap: 10px;
+}
+
+.finance-box:hover .card {
+    border-color: #38b549;
+}
+
+.product-cat-box .card {
+    padding: 1.25rem;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.finance-box a {
+    text-decoration: none;
+    color: #666;
+}
+
+.product-cat-box a {
+    color: #666 !important;
+}
+
+.position-relative {
+    position: relative !important;
+}
+
+.icn-load.tbl {
+    margin-right: 5px;
+    display: inline-block;
+    width: 20px;
+}
+
+.finance-box .card-title span {
+    font-family: 'deltasanslight';
+    font-size: 15px;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+
+.float-right {
+    float: right !important;
+}
+
+.investor__relation__rght__top__lft>.card,
+.investor__relation__rght__top__mdl>.card {
+    padding: 1.25rem;
+}
+
+.investor__relation__rght__top__lft>.card a:nth-child(2),
+.investor__relation__rght__top__mdl>.card a:nth-child(2) {
+    color: gray;
+}
+
+.investor__relation__rght__top__lft>.card a:nth-child(2):hover,
+.investor__relation__rght__top__mdl>.card a:nth-child(2):hover {
+    color: #38b549
+}
+
+
+.investor__relation__rght__top__lft h3,
+.investor__relation__rght__top__mdl h3 {
+    font-family: 'deltasanslight';
+    font-size: 20px;
+    line-height: 37px;
+    font-weight: 400;
+    color: #00afef;
+}
+
+.investor__relation__rght__top__rght ul {}
+
+.investor__relation__rght__top__rght ul li {}
+
+.investor__relation__rght__top__rght ul li a {
+    font-size: 20px;
+    color: #38b549;
+}
+
+.investor__relation__rght__bottom {
+    margin-top: 100px;
+    display: flex;
+    gap: 50px;
+
+}
+
+.investor__relation_rght__bottom__rght a {
+    color: #38b549;
+    font-size: 25px;
+}
+
+.text-opportunity-2>a {
+    color: gray;
+}
+
+.text-opportunity-3>a {
+    color: gray;
+}
+
+.investor__relation_rght__bottom__rght {
+    padding-top: 20px;
+}
+
+.anual__report {
+    background-color: gray;
+    padding: 20px;
+}
+
+.table__body {
+    background: #cfcfcf;
+    display: inline-block;
+    padding: 0px 23px 20px 20px;
+    border-radius: 14px;
+}
+
+
 /* =========== Responsive media query css ============== */
 
 @media (max-width: 1440px) {
@@ -640,6 +778,31 @@ a.child__more__btn {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         gap: 3px;
+    }
+
+    .investor__relation__rght__top {
+        display: grid;
+        grid-template-columns: 2fr 2fr 1fr;
+        gap: 10px;
+        grid: none;
+    }
+
+    .investor__relation__rght__bottom {
+        margin-top: 100px;
+        display: flex;
+        gap: 50px;
+        flex-direction: column;
+
+    }
+
+    .investor__relation {
+        flex-direction: column;
+    }
+
+    .investor__relation__lft {
+        width: 100%;
+        padding-right: 30px;
+        border-right: 0px solid #d0d0d0;
     }
 }
 
