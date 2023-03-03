@@ -571,7 +571,21 @@ a.child__more__btn {
 
 
 /* ------------ investor__relations__lft__bottom ----------- */
-.investor__relations__lft__bottom {}
+.investor__relations__lft__bottom {
+    padding-top: 85px;
+    position: relative;
+}
+
+.investor__relations__lft__bottom h3 {
+    position: absolute;
+    top: 45px;
+    left: -2px;
+    font-family: 'deltasanslight';
+    font-size: 20px;
+    line-height: 37px;
+    font-weight: 400;
+    color: #00afef;
+}
 
 .ir-activities {
     padding: 11px;
@@ -581,6 +595,8 @@ a.child__more__btn {
 .dis-ir-index {
     white-space: nowrap;
     text-overflow: ellipsis;
+    overflow: hidden;
+    /* width: 150px; */
 }
 
 .icn-load.tbl {
