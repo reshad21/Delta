@@ -376,6 +376,128 @@
     </div>
     <!-- delta solution end -->
 
+    <!-- Delta product section start -->
+    <div class="delta__product__section_cmn py_100" id="delta__product__section_cmn">
+        <!-- common section start -->
+            <div class="common__section__start">
+                <div class="container-fluid">
+                    <div class="container">
+                        <div class="common__section">
+                            <h1>Products</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <!-- common section end -->
+
+        <!-- delta products section slider start -->
+            <div class="product__slider__section">
+                <div class="container-fluid">
+                    <div class="container">
+                        <div class="product__slider_wraper">
+                            <div class="swiper mySwiper2">
+                                <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="product">
+                                        <img src="images/1-power-electronics.jpg" alt="" class="img-fluid">
+                                        <div class="product__details">
+                                            <a href="#">Components </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="product">
+                                        <img src="images/2-embed-power.jpg" alt="" class="img-fluid">
+                                        <div class="product__details">
+                                            <a href="#">Components </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="product">
+                                        <img src="images/3-Fan and-Thermal-Management.jpg" alt="" class="img-fluid">
+                                        <div class="product__details">
+                                            <a href="#">Components </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="product">
+                                        <img src="images/4.-automotive-electronics.jpg" alt="" class="img-fluid">
+                                        <div class="product__details">
+                                            <a href="#">Components </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="product">
+                                        <img src="images/5-Industrial-Automation.jpg" alt="" class="img-fluid">
+                                        <div class="product__details">
+                                            <a href="#">Components </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="product">
+                                        <img src="images/6-Building-Automation.jpg" alt="" class="img-fluid">
+                                        <div class="product__details">
+                                            <a href="#">Components </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="product">
+                                        <img src="images/7-ICT-Infrastructure.jpg" alt="" class="img-fluid">
+                                        <div class="product__details">
+                                            <a href="#">Components </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="product">
+                                        <img src="images/8-Energy-Infra.jpg" alt="" class="img-fluid">
+                                        <div class="product__details">
+                                            <a href="#">Components </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="product">
+                                        <img src="images/Innergie-Power Adapter.jpg" alt="" class="img-fluid">
+                                        <div class="product__details">
+                                            <a href="#">Components </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="product">
+                                        <img src="images/10-Vivitek.jpg" alt="" class="img-fluid">
+                                        <div class="product__details">
+                                            <a href="#">Components </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                                <!-- swiper navigation -->
+                                <div class="swiper__products_navigation">
+                                    <div class="swiper-button-next"></div>
+                                    <div class="swiper-button-prev"></div>
+                                </div>
+                                <!-- swiper pagination -->
+                                <div class="swiper-pagination"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <!-- delta products section slider end -->
+    </div>
+    <!-- Delta product section end -->
+    
+
+
+    
+
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
@@ -390,17 +512,30 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <!-- Initialize Swiper -->
     <script>
-      var swiper = new Swiper(".mySwiper", {
-        freeMode: true,
-        autoplay: {
-            delay: 2400,
-            disableOnInteraction: false,
-        },
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-      });
+      const deltaHero = new Swiper(".mySwiper", {
+            freeMode: true,
+            autoplay: {
+                delay: 2400,
+                disableOnInteraction: false,
+            },
+            pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+            },
+        });
+
+        const deltaProducts = new Swiper(".mySwiper2", {
+            slidesPerView: 4,
+            spaceBetween: 30,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
     </script>
 </body>
 </html>
