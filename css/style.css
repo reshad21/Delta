@@ -823,6 +823,109 @@ a.child__more__btn {
     display: inline-block;
 }
 
+/* ============= contact us section start ============== */
+.contact__us__section {
+    background-color: #e2e2e2;
+    padding: 100px 0 40px 0;
+}
+
+.contact__us {
+    display: flex;
+    align-items: center;
+}
+
+.contact__us__lft {
+    width: 50%;
+}
+
+.contact__us__lft h3 {
+    color: #0297ea;
+    font-weight: bold;
+    font-size: 19px;
+    font-family: arial;
+}
+
+.contact__us__lft p {
+    font-size: 19px;
+    color: gray;
+    font-weight: inherit;
+}
+
+.contact__us__lft .contact__input {
+    width: calc(100% - 25%);
+    border: 2px solid #00d9ff;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact__us__lft .contact__input span {}
+
+.contact__us__lft .social__media__wrap {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px 0;
+}
+
+.contact__us__lft .social__media__wrap span {
+    font-size: 17px;
+    color: gray;
+    font-weight: bold;
+    font-family: arial;
+}
+
+.contact__input span:nth-child(1) {
+    font-size: 17px;
+    color: gray;
+}
+
+.contact__input span:nth-child(2) {
+    background-color: #00abff;
+    color: white;
+    padding: 7px 45px;
+}
+
+.contact__us__lft .social__media__wrap .social_icon {}
+
+.contact__us__lft .social__media__wrap .social_icon ul {
+    display: flex;
+    margin-bottom: 0;
+    padding: 0;
+    gap: 5px;
+}
+
+.contact__us__lft .social__media__wrap .social_icon ul li {}
+
+.contact__us__lft .social__media__wrap .social_icon ul li a {}
+
+.contact__us__rght {
+    width: 50%;
+}
+
+.social__icon_size {
+    width: 40px;
+    height: 40px;
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+.send__message {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 27px;
+}
+
+.send__message img {}
+
+.send__message a {
+    font-size: 18px;
+    font-weight: bold;
+    font-family: arial;
+    color: #0095ff;
+}
 
 /* ============= Responsive media query css ============== */
 
@@ -886,6 +989,17 @@ a.child__more__btn {
         grid-template-columns: repeat(2, 1fr);
         gap: 10px;
     }
+
+    .contact__us {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+    }
+
+    .contact__us__lft {
+        width: 100%;
+    }
 }
 
 @media (max-width: 767px) {}
@@ -899,4 +1013,14 @@ a.child__more__btn {
     }
 }
 
-@media (max-width: 446px) {}
+@media (max-width: 446px) {
+    .contact__us__lft .contact__input {
+        width: calc(100% - 8%);
+        border: 2px solid #00d9ff;
+        padding: 5px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+}
