@@ -543,7 +543,55 @@ a.child__more__btn {
 }
 
 
+/* =============== investor relations section start ================= */
+.investor__relation {
+    display: flex;
+    padding: 100px 0;
 
+}
+
+.investor__relation__lft {
+    width: 50%;
+}
+
+.investor__relations__lft__top {
+    position: relative;
+}
+
+.investor__relations__lft__top h3 {
+    position: absolute;
+    font-family: 'deltasanslight';
+    font-size: 20px;
+    line-height: 37px;
+    font-weight: 400;
+    color: #00afef;
+    top: -15px;
+    left: 5px;
+}
+
+
+/* ------------ investor__relations__lft__bottom ----------- */
+.investor__relations__lft__bottom {}
+
+.ir-activities {
+    padding: 11px;
+    border-bottom: 1px #707070 solid;
+}
+
+.dis-ir-index {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.icn-load.tbl {
+    margin-right: 5px;
+    display: inline-block;
+    width: 20px;
+}
+
+.anchor_clr {
+    color: gray;
+}
 
 
 /* =========== Responsive media query css ============== */
