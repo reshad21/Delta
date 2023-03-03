@@ -70,7 +70,6 @@ body {
     background-color: #fff;
 }
 
-ul.navbar-nav {}
 
 .navbar-nav .nav-link {
     padding-right: 0.7rem !important;
@@ -194,7 +193,6 @@ ul.navbar-nav {}
     margin-bottom: 0;
 }
 
-.navber__contact__section ul li {}
 
 .navber__contact__section ul li a {
     color: #6e6e6e;
@@ -281,7 +279,6 @@ ul.navbar-nav {}
     align-items: center;
 }
 
-.about__delta img {}
 
 .about__delta p {
     margin-top: 130px;
@@ -325,7 +322,6 @@ ul.navbar-nav {}
     margin-bottom: 0;
 }
 
-.delta__solution {}
 
 .delta__solution_top {
     display: grid;
@@ -702,9 +698,6 @@ a.child__more__btn {
     color: #00afef;
 }
 
-.investor__relation__rght__top__rght ul {}
-
-.investor__relation__rght__top__rght ul li {}
 
 .investor__relation__rght__top__rght ul li a {
     font-size: 20px;
@@ -747,8 +740,91 @@ a.child__more__btn {
     border-radius: 14px;
 }
 
+/* ============= News & Blog section ============== */
+.news__and__blog__section {
+    background-image: url(../images/bg-index-news.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 100px 0;
+}
 
-/* =========== Responsive media query css ============== */
+.news__and__blog__wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.news__and__blog__item {
+    position: relative;
+    background-color: #fff;
+    border: 1px solid #e4e4e4;
+}
+
+.news__and__blog__item .news__category {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #0297ea;
+    color: white;
+    display: inline-block;
+    padding: 10px 25px;
+}
+
+.news__blog__content {
+    padding: 20px;
+}
+
+.news__and__blog__item .news__blog__content h5 {
+    color: #38b549;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 21px;
+    margin-bottom: 15px;
+    height: 65px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.news__and__blog__item .news__blog__content h5:hover {
+    color: #00afef;
+}
+
+.news__and__blog__item .news__blog__content p {
+    text-align: justify;
+}
+
+.blog__published__time {
+    display: flex;
+    gap: 10px;
+}
+
+.news__nd__blog__item {
+    color: gray;
+    transition: all 0.3s ease;
+}
+
+.news__nd__blog__item:hover {
+    color: gray;
+    box-shadow: 0 0 5px gray;
+}
+
+.blog__section__seemore {
+    padding: 50px 0;
+    padding-bottom: 0;
+    text-align: center;
+}
+
+.blog__section__seemore a {
+    background-color: #00afef;
+    color: #fff;
+    padding: 10px 25px;
+    display: inline-block;
+}
+
+
+/* ============= Responsive media query css ============== */
 
 @media (max-width: 1440px) {
 
@@ -804,10 +880,23 @@ a.child__more__btn {
         padding-right: 30px;
         border-right: 0px solid #d0d0d0;
     }
+
+    .news__and__blog__wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
 }
 
 @media (max-width: 767px) {}
 
-@media (max-width: 576px) {}
+@media (max-width: 576px) {
+
+    .news__and__blog__wrapper {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+    }
+}
 
 @media (max-width: 446px) {}
