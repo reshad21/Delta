@@ -64,6 +64,38 @@ body {
     color: #00afef;
 }
 
+/* ==========================
+Responsive menu section start 
+============================= */
+
+.responsive__menu__section {
+    padding: 20px 0;
+}
+
+.res__menu__wrp {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.res_mnu_lft {}
+
+.res_mnu_lft img {
+    height: 50px;
+    width: 145px;
+}
+
+.res_mnu_rght {}
+
+.responsive__menu__section {
+    display: none;
+}
+
+
+/* ==========================
+ Responsive menu section end 
+ ============================ */
+
 /* ============== header section start ============= */
 #headerSection {
     position: fixed;
@@ -1127,6 +1159,21 @@ a.child__more__btn {
 
     .before__footer__section {
         display: none;
+    }
+
+    .slider__section {
+        margin-top: 100px;
+    }
+
+    .responsive__menu__section {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 999999;
+        background-color: white;
+        border-bottom: 4px solid blue;
     }
 }
 
