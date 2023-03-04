@@ -1150,43 +1150,44 @@ a.child__more__btn {
         transform: translate(-50%, -50%);
 
     }
+}
 
-    @media (max-width: 576px) {
+@media (max-width: 576px) {
 
-        .news__and__blog__wrapper {
-            display: grid;
-            grid-template-columns: repeat(1, 1fr);
-            gap: 10px;
-        }
-
-        .contact__us__rght {
-            width: 100%;
-        }
-
-        .send__message {
-            width: 100%;
-        }
-
-        .about__delta__section::after {
-            content: "";
-            width: 100px;
-            height: 5px;
-            background-color: #38b549;
-            position: absolute;
-            top: 33%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
+    .news__and__blog__wrapper {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
     }
 
-    @media (max-width: 446px) {
-        .contact__us__lft .contact__input {
-            width: calc(100% - 8%);
-            border: 2px solid #00d9ff;
-            padding: 5px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
+    .contact__us__rght {
+        width: 100%;
     }
+
+    .send__message {
+        width: 100%;
+    }
+
+    .about__delta__section::after {
+        content: "";
+        width: 100px;
+        height: 5px;
+        background-color: #38b549;
+        position: absolute;
+        top: 33%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@media (max-width: 446px) {
+    .contact__us__lft .contact__input {
+        width: calc(100% - 8%);
+        border: 2px solid #00d9ff;
+        padding: 5px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+}
