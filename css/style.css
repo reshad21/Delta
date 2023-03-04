@@ -64,6 +64,19 @@ body {
     color: #00afef;
 }
 
+.testing_div {
+    display: none;
+    margin-top: 95px;
+}
+
+.testing_div ul {
+    background-color: #0095ff;
+}
+
+.showElement {
+    display: block;
+}
+
 /* ==========================
 Responsive menu section start 
 ============================= */
