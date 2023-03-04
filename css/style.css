@@ -860,7 +860,6 @@ a.child__more__btn {
     align-items: center;
 }
 
-.contact__us__lft .contact__input span {}
 
 .contact__us__lft .social__media__wrap {
     display: flex;
@@ -887,7 +886,6 @@ a.child__more__btn {
     padding: 7px 45px;
 }
 
-.contact__us__lft .social__media__wrap .social_icon {}
 
 .contact__us__lft .social__media__wrap .social_icon ul {
     display: flex;
@@ -896,9 +894,6 @@ a.child__more__btn {
     gap: 5px;
 }
 
-.contact__us__lft .social__media__wrap .social_icon ul li {}
-
-.contact__us__lft .social__media__wrap .social_icon ul li a {}
 
 .contact__us__rght {
     width: 50%;
@@ -926,7 +921,6 @@ a.child__more__btn {
 
 
 
-.send__message img {}
 
 .send__message a {
     font-size: 18px;
@@ -954,9 +948,6 @@ a.child__more__btn {
     padding: 100px 0;
 }
 
-.before__footer__item {}
-
-.before__footer__item ul {}
 
 .before__footer__item ul li {
     padding: 0 5px;
@@ -982,6 +973,52 @@ a.child__more__btn {
 .before__footer__item ul li a:hover {
     color: #38b549;
     font-size: 16px;
+}
+
+
+/* ============== footer section ============== */
+.footer__Section {
+    background-color: #1e2125;
+    padding: 20px 0;
+}
+
+.footer_section_wrp {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ftr__lft {}
+
+.ftr__lft p {
+    color: gray;
+    font-family: arial;
+    margin-bottom: 0;
+}
+
+.ftr__right {}
+
+.ftr__right ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 0;
+}
+
+.ftr__right ul li:nth-child(1) {
+    border-right: 2px solid gray;
+    padding-right: 10px;
+}
+
+.ftr__right ul li a {
+    color: gray;
+    font-weight: bold;
+    font-family: arial;
+}
+
+.ftr__right ul li a:hover {
+    color: #4d4c4c;
 }
 
 /* ============= Responsive media query css ============== */
