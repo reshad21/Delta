@@ -270,7 +270,12 @@ Responsive menu section start
     width: 145px;
 }
 
-.res_mnu_rght {}
+.res_mnu_rght {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    color: gray;
+}
 
 .responsive__menu__section {
     display: none;
