@@ -944,6 +944,46 @@ a.child__more__btn {
     cursor: pointer;
 }
 
+
+/* ============== before footer section ============ */
+.before__footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 2;
+    gap: 10px;
+    padding: 100px 0;
+}
+
+.before__footer__item {}
+
+.before__footer__item ul {}
+
+.before__footer__item ul li {
+    padding: 0 5px;
+}
+
+.before__footer__item ul li:nth-child(1) {
+    border-left: 2px solid #38b549;
+    margin-bottom: 10px;
+
+}
+
+.before__footer__item ul li.delta__ftr__lst {
+    border-left: 2px solid #38b549;
+    margin-bottom: 10px;
+
+}
+
+.before__footer__item ul li a {
+    color: gray;
+    font-size: 16px;
+}
+
+.before__footer__item ul li a:hover {
+    color: #38b549;
+    font-size: 16px;
+}
+
 /* ============= Responsive media query css ============== */
 
 @media (max-width: 1440px) {
