@@ -915,8 +915,16 @@ a.child__more__btn {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 27px;
+    gap: 9px;
+    position: relative;
+    z-index: 99999;
+    width: 50%;
+    margin: 0 auto;
+    border: 1px solid #00d9ff;
+    padding: 29px;
 }
+
+
 
 .send__message img {}
 
@@ -925,6 +933,15 @@ a.child__more__btn {
     font-weight: bold;
     font-family: arial;
     color: #0095ff;
+
+}
+
+.send__message a:hover {
+    text-decoration: underline;
+}
+
+.contact__us__rght a {
+    cursor: pointer;
 }
 
 /* ============= Responsive media query css ============== */
